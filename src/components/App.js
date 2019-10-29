@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import typicode from '../api/typicode';
 
 import MonsterCardList from './MonsterCardList/MonsterCardList.component';
@@ -52,8 +53,9 @@ class App extends React.Component {
 
         return (
             <div className="App">
+                <h1>Monster Rolodex</h1>
                 <SearchBox 
-                placeholder = {this.state.searchTerm}  
+                placeholder = 'Search Monsters'  
                 onChange={this.onInputChange} />
                 <MonsterCardList monsterList = {filteredMonsters} />
             </div>
