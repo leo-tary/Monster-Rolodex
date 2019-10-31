@@ -55,7 +55,7 @@ class App extends React.Component {
             <div className="App">
                 <h1>Monster Rolodex</h1>
                 <SearchBox 
-                placeholder = 'Search Monsters'  
+                placeholder = 'Search Monster'  
                 onChange={this.onInputChange} />
                 <MonsterCardList monsterList = {filteredMonsters} />
             </div>
